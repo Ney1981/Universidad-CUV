@@ -1,0 +1,247 @@
+.cursos {
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 314px;
+  background-color: var(--primary-color);
+  border-left: 1px solid var(--secondary-color);
+  padding: 20px 20px 0 20px;
+  position: relative;
+}
+
+.banner__title {
+  color: var(--text);
+}
+
+.banner__container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+  gap: 60px;
+}
+
+.banner__profile {
+  padding: 5px 25px 25px;
+  height: 100%;
+}
+
+.banner__avatar {
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.banner__name {
+  font-size: 1.2rem;
+}
+
+.banner__text {
+  font-size: 0.9rem;
+}
+
+.banner__progress--title {
+  font-size: 1rem;
+  color: var(--text);
+  margin-top: 15px;
+}
+
+.banner__progress {
+  height: 95%;
+  margin-inline: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Custom input range */
+.range {
+  height: 64px;
+  width: 100%;
+  max-width: 332px;
+  background-color: var(--text);
+  border-radius: 4rem;
+  box-shadow: 0 6px 16px #0a0c1580;
+  padding-inline: 2.5rem;
+  display: grid;
+}
+
+.range__content {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.range__slider {
+  width: 100%;
+  height: 16px;
+  background-color: var(--text);
+  border-radius: 4rem;
+  box-shadow: 0 4px 12px #0a0c1580;
+  overflow: hidden;
+}
+
+.range__slider-line {
+  width: 0;
+  height: 100%;
+  background: var(--gradient-color);
+}
+
+.range__thumb {
+  width: 32px;
+  height: 32px;
+  background-color: var(--text);
+  border-radius: 50%;
+  box-shadow: 0 0 12px #0a0c1580;
+  position: absolute;
+}
+
+/* Value input range */
+.range__value {
+  width: 64px;
+  height: 64px;
+  background: var(--gradient-color);
+  position: absolute;
+  top: -82px;
+  left: -16px;
+  border-radius: 2rem 2rem 2rem 0.25rem;
+  transform: rotate(-45deg);
+  display: grid;
+  place-items: center;
+}
+
+.range__value-number {
+  transform: rotate(45deg);
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+/* Default input range */
+.range__input {
+  appearance: none;
+  width: 100%;
+  height: 16px;
+  position: absolute;
+  opacity: 0;
+}
+
+.range__input::-webkit-slider-thumb {
+  appearance: none;
+  width: 32px;
+  height: 32px;
+}
+
+.range__input::-webkit-slider-thumb:hover {
+  cursor: pointer;
+}
+
+/* SKILLS */
+.banner__skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 550px;
+  height: 80%;
+  gap: 40px;
+}
+
+.banner__card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.banner__img {
+  width: 55px;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  margin: 15px;
+}
+
+.banner__card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--text);
+  width: 110px;
+}
+
+.banner__card__number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.banner__card__name {
+  font-size: 1rem;
+}
+
+/* cursos */
+
+.cursos__container {
+  padding: 10px 15px 0;
+  height: 80%;
+}
+
+.cursos__box {
+  display: flex;
+}
+
+.current {
+  width: 100%;
+  height: 340px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  gap: 30px;
+}
+
+.cursos__card {
+  width: 255px;
+  min-width: 255px;
+  height: 254px;
+  min-height: 254px;
+  border-radius: var(--border-radius);
+  background-color: var(--text);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.cursos__img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  height: 115px;
+  object-fit: cover;
+}
+
+.cursos__body {
+  padding: 5px;
+}
+
+.cursos__name {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.cursos__category {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.cursos__label {
+  display: inline-block;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+  padding: 5px;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 0.8rem;
+}

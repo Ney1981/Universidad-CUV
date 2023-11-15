@@ -1,0 +1,363 @@
+.dashboard {
+  width: 100%;
+  padding: 25px 20px;
+  min-height: 1270px;
+}
+
+.dashboard__header {
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/11394952/pexels-photo-11394952.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  height: 250px;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 15px;
+  position: relative;
+}
+
+.dashboard__title {
+  color: var(--text);
+  font-size: 2.5rem;
+}
+
+.dashboard__welcome {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__img {
+  width: 400px;
+  background-image: url(../assets/images/bg.png);
+}
+
+.dashboard__box {
+  width: 97%;
+  height: 120px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -40px;
+  gap: 15px;
+}
+
+.dashboard__card {
+  width: 60%;
+  height: 100%;
+  background-color: var(--text);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.dashboard__icon {
+  display: inline-block;
+  width: 50px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+.dashboard__description {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/*Linea de Tiempo*/
+
+.time {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 100%;
+  height: 300px;
+}
+
+.line {
+  width: 70%;
+  height: 300px;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+}
+
+.line__title {
+  margin-top: 10px;
+}
+
+.line__divisor {
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.line__course {
+  width: 100%;
+  height: 75%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.line__card {
+  display: flex;
+  padding: 5px 15px;
+  gap: 15px;
+}
+.line__img {
+  width: 250px;
+  border-radius: var(--border-radius);
+}
+
+.line__description {
+  border-left: 1px solid var(--gray);
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.line__course__title {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.line__course__btn {
+  width: 130px;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: var(--secondary-color);
+  color: var(--text);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.line__course__btn:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+.date {
+  position: relative;
+  background: var(--text);
+  border-radius: 8px;
+  border: 1px solid #0004;
+  width: 200px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px linear-gradient
+    (transparent, transparent, #0004);
+}
+
+.date #monthName {
+  position: relative;
+  background: var(--secondary-color);
+  color: var(--text);
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.date #dayName {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+  color: #999;
+}
+
+.date #dayNumber {
+  font-size: 80px;
+  font-weight: 700;
+  margin-top: 0px;
+  color: #333;
+  line-height: 1em;
+}
+
+.date #year {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #999;
+}
+
+/* Calendario */
+
+.event {
+  width: 100%;
+  height: 500px;
+}
+.event__title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+.event__container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.event__new {
+  width: 50%;
+  height: 100%;
+}
+
+.container-calendar {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 50%;
+}
+
+.calendar {
+  text-align: center;
+}
+
+.calendar table {
+  width: 100%;
+}
+
+.calendar header {
+  position: relative;
+}
+
+.calendar h2 {
+  text-transform: uppercase;
+}
+
+.calendar thead {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.calendar tbody {
+  color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+  border: 2px solid var(--secondary-color);
+}
+
+.calendar td {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  width: 4em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+  color: var(--primary-color);
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+  border: 2px solid var(--primary-color);
+}
+
+.current-day {
+  background: var(--primary-color);
+  color: #f9f9f9;
+}
+
+.event {
+  cursor: pointer;
+  position: relative;
+}
+
+.event:after {
+  background: var(--secondary-color);
+  border-radius: 50%;
+  bottom: 0.5em;
+  display: block;
+  content: "";
+  height: 0.5em;
+  left: 50%;
+  margin: -0.25em 0 0 -0.25em;
+  position: absolute;
+  width: 0.5em;
+}
+
+.event.current-day:after {
+  background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+  border: 2px solid #cbd1d2;
+  border-radius: 50%;
+  color: #cbd1d2;
+  height: 2em;
+  font-size: 0.75em;
+  line-height: 2em;
+  margin: -1em;
+  position: absolute;
+  top: 50%;
+  width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+  background: #cbd1d2;
+  color: #f9f9f9;
+}
+
+.btn-prev {
+  left: 6em;
+}
+
+.btn-next {
+  right: 6em;
+}
+
+.event__new {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 90%;
+  border-radius: var(--border-radius);
+  background-image: linear-gradient(
+      266deg,
+      rgba(1, 22, 64, 1) 0%,
+      rgba(255, 100, 146, 0) 100%
+    ),
+    url(https://images.pexels.com/photos/5676744/pexels-photo-5676744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-position: center;
+}
+
+.event__text {
+  font-size: 4rem;
+  color: var(--text);
+  text-align: center;
+  line-height: 405px;
+}
