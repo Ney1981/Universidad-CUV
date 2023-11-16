@@ -5,6 +5,7 @@ solo se descrimina en algunas opciones dependiendo del perfil -->
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/cube-icon.svg" type="image/x-icon">
     <title>Mis Cursos</title>
     <link rel="stylesheet" href="./css/master.css">
@@ -66,6 +67,23 @@ solo se descrimina en algunas opciones dependiendo del perfil -->
                             <span class="aside__text">Mis Cursos</span>
                         </a>
 
+                        <a href="crearcurso.php" class="aside__item">
+                            <svg class="aside__icon" xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-certificate" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5"></path>
+                                <path
+                                    d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73">
+                                </path>
+                                <path d="M6 9l12 0"></path>
+                                <path d="M6 12l3 0"></path>
+                                <path d="M6 15l2 0"></path>
+                            </svg>
+                            <span class="aside__text">Crear Curso</span>
+                        </a>
                     </ul>
 
                 </nav>

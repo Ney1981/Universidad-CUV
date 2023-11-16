@@ -12,10 +12,9 @@
 
 <body>
     <header class="header">
-
         <div class="header__container">
             <div class="header__btns">
-                <button class="header__back" title="Regresar">
+                <button class="header__back" title="Regresar" onClick="navigateTo()">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="24"
                         height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -57,9 +56,9 @@
         <section class="classroom">
             <div class="classroom__card">
                 <button class="classroom__btn" onclick="showView('view1')">Curso</button>
-                <button class="classroom__btn" onclick="showView('view2')">Participantes</button>
+                <button class="classroom__btn" onclick="showView('view2')">Estudiantes</button>
                 <button class="classroom__btn" onclick="showView('view3')">Calificaciones</button>
-                <button class="classroom__btn" onclick="showView('view4')">Talleres</button>
+                <button class="classroom__btn" onclick="showView('view4')">Actividades</button>
             </div>
         </section>
         <section class="reference">
@@ -166,7 +165,7 @@
             </article>
             <article class="view4" id="view4">
                 <form class="form">
-         
+
                     <div class="separator">
                         <hr class="line">
                         <p>Trabajos Asignados </p>
@@ -183,10 +182,10 @@
                             <input id="password_field" class="input_field" type="text" name="input-name"
                                 title="Inpit title" placeholder="Docente">
                         </div>
-                       
+
                         <div class="input_container">
                             <label for="password_field" class="input_label">Subir archivo</label>
-                            <input id="password_field" class="input_field" type="file" name="input-name"
+                            <input id="password_field" class="input_field input_file" type="file" name="input-name"
                                 title="Inpit title" placeholder="Enter your full name">
                         </div>
                     </div>

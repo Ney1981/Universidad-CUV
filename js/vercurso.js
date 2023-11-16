@@ -9,12 +9,17 @@ function showView(viewId) {
   }
 }
 
+function navigateTo() {
+  window.location.href = "areapersonal.php"; //! Cambiar dependiendo si es estudiante o docente
+}
+
+
 async function getUsers() {
   //* Peticion Prueba
   const response = await fetch("https://randomuser.me/api/?results=25");
   const data = await response.json();
 
-  console.log(data.results);
+  // console.log(data.results);
   const cards__view2 = document.getElementById("cards__view2");
   data.results.forEach((element) => {
     cards__view2.innerHTML += `<div class="card__usuario">
